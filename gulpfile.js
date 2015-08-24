@@ -16,7 +16,7 @@ minifyHTML = require('gulp-minify-html');
 
 pages = require('gulp-gh-pages');
 
-gulp.task('default', ['coffee', 'jade', 'styl', 'yaml']);
+gulp.task('default', ['coffee', 'jade', 'styl', 'yaml', 'static']);
 
 gulp.task('watch', function() {
   return gulp.watch('./src/**', ['default']);
@@ -48,6 +48,10 @@ gulp.task('yaml', function() {
   return gulp.src('./src/**/*.yml').pipe(yaml({
     space: 4
   })).pipe(gulp.dest('./build'));
+});
+
+gulp.task('static', function() {
+  return gulp.src('./src/res/**/*.*').pipe(gulp.dest('./build'));
 });
 
 gulp.task('inuit', function() {
