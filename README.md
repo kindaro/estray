@@ -1,1 +1,0 @@
-Graphical design studio.
