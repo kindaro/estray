@@ -322,7 +322,7 @@ header {
   height: 20vh;
   width: 100%;
   background-color: #be4326;
-  background-image: url("/line-bg.png");
+  background-image: url("line-bg.png");
 }
 main {
   background-color: #1b0c09;
@@ -385,7 +385,7 @@ main article {
 main article .logo {
   text-align: center;
   color: rgba(0,0,0,0);
-  background-image: url("/logo-medium.png");
+  background-image: url("logo-medium.png");
   width: 260px;
   height: 130px;
 }
@@ -409,5 +409,5 @@ footer {
   top: 90vh;
   width: 100%;
   background-color: #063a4c;
-  background-image: url("/line-bg.png");
+  background-image: url("line-bg.png");
 }
